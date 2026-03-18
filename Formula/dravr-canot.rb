@@ -4,22 +4,22 @@
 class DravrCanot < Formula
   desc "Unified multi-platform messaging server for WhatsApp, Slack, Discord, Telegram, and Messenger"
   homepage "https://github.com/dravr-ai/dravr-canot"
-  version "0.1.1"
+  version "0.1.2"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/dravr-ai/dravr-canot/releases/download/v#{version}/dravr-canot-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "1ced44ff51b5461052bb3a4c7666611d4ff4449db424f5720c943ca857bfa108"
+      sha256 "4576a03cb7f796dac5bd934403b2ce9470db6b988fa9d891f19be45b7bcef453"
     else
       url "https://github.com/dravr-ai/dravr-canot/releases/download/v#{version}/dravr-canot-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "990767ea4ffb07e5aaf239160380e7d23fa606017605fd8cc1b1154eec82e845"
+      sha256 "b518ce2c6bb5cfdc3a38047219d3dfe41a70d4c4ddbeaaaf3f80d0cbd242c4fd"
     end
   end
 
   on_linux do
     url "https://github.com/dravr-ai/dravr-canot/releases/download/v#{version}/dravr-canot-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "059c2fa503b1ec5e28d46a441dc950df5ffe622e33a0f7195f9b412832e37468"
+    sha256 "a171f0bb28c54f45b7c0f6d2082db82cc5579253cc5da3ce8250d0c18221126f"
   end
 
   def install

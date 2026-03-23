@@ -4,22 +4,22 @@
 class DravrSciotte < Formula
   desc "Strava training data scraper with headless Chrome, OAuth, and in-memory caching"
   homepage "https://github.com/dravr-ai/dravr-sciotte"
-  version "0.2.1"
+  version "0.3.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/dravr-ai/dravr-sciotte/releases/download/v#{version}/dravr-sciotte-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "7ff974d8b88fa15b267f717e311ad5d052288ec1be4ca6c5b13f5782c4d3d374"
+      sha256 "04d9250c0a99a1816f03855eee1c523dfe0892e90e8f404dff5ec5989bfd2f47"
     else
       url "https://github.com/dravr-ai/dravr-sciotte/releases/download/v#{version}/dravr-sciotte-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "d5e571f52413c1371aa9dc740a0423ad3ac31c4cac0e8f7037824bdd8b1b3863"
+      sha256 "38be77307037edbf1dc78574ea65b99c0396b0c68dc0a232be6de94da20b0267"
     end
   end
 
   on_linux do
     url "https://github.com/dravr-ai/dravr-sciotte/releases/download/v#{version}/dravr-sciotte-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "51bf071c3ce530cc42c05c5ae7e9f4a9be34ce925df8f52c01744b3c0d4297e0"
+    sha256 "c474ebd9eb92cf3ef8b4337d8c774f1add01ee71fdaf0aea150346131416d40d"
   end
 
   def install

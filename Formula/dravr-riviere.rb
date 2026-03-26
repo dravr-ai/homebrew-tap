@@ -4,22 +4,22 @@
 class DravrRiviere < Formula
   desc "Time-series storage engine for health and fitness metric persistence"
   homepage "https://github.com/dravr-ai/dravr-riviere"
-  version "0.2.0"
+  version "0.2.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/dravr-ai/dravr-riviere/releases/download/v#{version}/dravr-riviere-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "296c90e0f8d4807ed05e23959486816a0e64e25f298457310a188e2c70861f6b"
+      sha256 "8331ca229dffc746440c97aa705ec11be5304dde216d19118140afc52f3f7824"
     else
       url "https://github.com/dravr-ai/dravr-riviere/releases/download/v#{version}/dravr-riviere-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "7e201a49cfce38ada0b9ee1a5f5b4a3c7fc779854a60a652826ed31419d8e648"
+      sha256 "bad50db1487684cdf603f392cd04148f0e471dfa403c2231dbe9fb4d65510588"
     end
   end
 
   on_linux do
     url "https://github.com/dravr-ai/dravr-riviere/releases/download/v#{version}/dravr-riviere-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "74d102d861a96cc243f29fea56c20769ff5620ae67bcc9cb84974cf967223c25"
+    sha256 "25e727d579a4ce1a7fd041c345f1d226ef171eb8eccb80bfe2eb34de58018e5f"
   end
 
   def install

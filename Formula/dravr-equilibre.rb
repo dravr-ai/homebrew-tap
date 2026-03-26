@@ -4,22 +4,22 @@
 class DravrEquilibre < Formula
   desc "Health and wellness domain models with composition-based provider traits"
   homepage "https://github.com/dravr-ai/dravr-equilibre"
-  version "0.2.0"
+  version "0.2.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/dravr-ai/dravr-equilibre/releases/download/v#{version}/dravr-equilibre-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "831bf8738106bb3a415ebf3d9f790127fcfa6c606c69fee6290c30129c735bbf"
+      sha256 "288fabf2d66b09ba07472c8f8117b707f468352f0d3e5ee001cd71f1d367a877"
     else
       url "https://github.com/dravr-ai/dravr-equilibre/releases/download/v#{version}/dravr-equilibre-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "2935199c05d91bd58647b33629796b8e7ca65f24ac9d3deeca557a2e65edd40b"
+      sha256 "4d85448afbe5d79c58171b02d5fba2c96dbea784c448a24d53cfa6f1067d8ea1"
     end
   end
 
   on_linux do
     url "https://github.com/dravr-ai/dravr-equilibre/releases/download/v#{version}/dravr-equilibre-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "aea9f5a07360bef3c531385ab1bd7412e11ddc568cb3b7b1a7e037d32f990914"
+    sha256 "42cdb0afffd018b00486a6c182d22556ba6c7bcf14d21b0b3925882151bbc212"
   end
 
   def install

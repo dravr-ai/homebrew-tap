@@ -4,22 +4,22 @@
 class DravrRiviere < Formula
   desc "Health data sync orchestrator — webhook-driven provider sync with cursor-based CDC"
   homepage "https://github.com/dravr-ai/dravr-enforme"
-  version "0.0.1"
+  version "0.1.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/dravr-ai/dravr-enforme/releases/download/v#{version}/dravr-enforme-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "bb4fdad862cc98d6e7043c98f975ac05b0461f1b3cf3e26d2328106d92da66a4"
+      sha256 "05d3990e36e6d2ff59e999997578240ba4063a93dad6b86afce45a452c1443ff"
     else
       url "https://github.com/dravr-ai/dravr-enforme/releases/download/v#{version}/dravr-enforme-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "b0bae720c3607e046ca0c6485479a2dec10e50119eba9a099ae5c8d73ded494d"
+      sha256 "223a9b32da7f5ee014debf06b0c076a4b09086f49cecf1e15b09bf5dd3a57627"
     end
   end
 
   on_linux do
     url "https://github.com/dravr-ai/dravr-enforme/releases/download/v#{version}/dravr-enforme-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "8f149e2cd52309eee939de903c721a3df6225e7b54713eb3f8ce12e19a61cb4f"
+    sha256 "15a92e838d864d6fe6105a8e9d9881a90a604c520d1231c61b3290dded4f1188"
   end
 
   def install

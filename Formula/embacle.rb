@@ -4,22 +4,22 @@
 class Embacle < Formula
   desc "LLM runner that wraps AI CLI tools as a unified OpenAI-compatible API + MCP server"
   homepage "https://github.com/dravr-ai/dravr-embacle"
-  version "0.25.1"
+  version "0.25.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/dravr-ai/dravr-embacle/releases/download/v#{version}/embacle-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "bdece1daab6a6c1895fdb0845d784386c2b7d36d1aeb561602c9eeaf5b2f612f"
+      sha256 "1b05877bcf6de918055bb459fcec729992f455749acc4bb9cb807f539a51280b"
     else
       url "https://github.com/dravr-ai/dravr-embacle/releases/download/v#{version}/embacle-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "dad853047b2453f270bd48ebf4227a23fcbd036059b7341001ee4377293c438f"
+      sha256 "30a40bc11531198b94110921a0d7e19c8f0100ff24ec7b8e9cd1271917465df5"
     end
   end
 
   on_linux do
     url "https://github.com/dravr-ai/dravr-embacle/releases/download/v#{version}/embacle-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "8db20ae6ee9c7ce888982e02fbaa23c138f33a5450d57f25f7d0daf1b260bead"
+    sha256 "c931bec8e78cfb7b3cd9a275328c25949f10273754cccda72384d2b38a3e7263"
   end
 
   def install

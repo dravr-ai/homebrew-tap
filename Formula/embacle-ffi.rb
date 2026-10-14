@@ -4,8 +4,8 @@
 class EmbacleFfi < Formula
   desc "C FFI static library for embacle LLM runners (Swift/C integration)"
   homepage "https://github.com/dravr-ai/dravr-embacle"
-  url "https://github.com/dravr-ai/dravr-embacle/archive/refs/tags/v0.36.0.tar.gz"
-  sha256 "5d3ecef29d7927ab171fb052ac1be79fef747716ee5f396ac834106853e73e25"
+  url "https://github.com/dravr-ai/dravr-embacle/archive/refs/tags/v0.36.1.tar.gz"
+  sha256 "3cbbd02a957fab3a4b0ce373e3bb8d2a0ac39486bbc2867dd13249acc50d5c3b"
   license "Apache-2.0"
 
   depends_on "rust" => :build
